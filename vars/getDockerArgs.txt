@@ -1,0 +1,9 @@
+The function makes sure 'docker run' gets the kvm group gid
+
+In some configurations, when running in docker, debos will fail because
+it can't load kvm producing errors like:
+    Could not access KVM kernel module: Permission denied
+    failed to initialize KVM: Permission denied
+    open /tmp/fakemachine-582582565/result: no such file or directory
+
+This can be prevented passing the kvm group gid to docker with --group-add
