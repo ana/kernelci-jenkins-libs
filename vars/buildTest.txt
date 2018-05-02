@@ -1,0 +1,1 @@
+Creates minimal Debian test image with the files to tun the test suite.
