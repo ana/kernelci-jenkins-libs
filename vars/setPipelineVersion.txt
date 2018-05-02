@@ -1,0 +1,1 @@
+Returns the pipeline version with the format YYYYMMMAA.X where X is the number of the build of the day
